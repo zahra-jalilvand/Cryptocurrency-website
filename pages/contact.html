@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="../assets/css/contact.css" />
+</head>
+
+<body>
+    <nav>
+        
+        <ul>
+            <li><a href="/index.html" target="_blank">Home</a></li>
+            <li><a href="./price.html" target="_blank">Prices</a></li>
+            <li><a href="./convert.html" target="_blank">Convert</a></li>
+            <li><a href="./contact.html" target="_blank">Contact Us</a></li>
+        </ul>
+        <a href="./signup.html" class="btn">Log in</a>
+
+        
+    </nav>
+    <header>
+        
+        <h1>Contact the Help Team</h1>
+    </header>
+
+    <section id="responseMessage"></section> <!-- Display API response message -->
+
+    <form id="contactForm">
+        <input type="hidden" name="access_key" value="29191ba7-aed2-4a5b-a796-003869423125"> <!--This is my Access Key from https://web3forms.com -->
+        <input name="name" type="text" id="name" class="feedback-input" placeholder="Name" required />
+        <input name="email" type="email" id="email" class="feedback-input" placeholder="Email" required />
+        <textarea name="message" id="message" class="feedback-input" placeholder="Message" required></textarea>
+        <input type="submit" value="SUBMIT" />
+    </form>
+    <script src="../assets/javascript/contact.js"></script>
+</body>
+
+</html>

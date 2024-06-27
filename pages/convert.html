@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>converter</title>
+    <link rel="stylesheet" href="../assets/css/convert.css" />
+</head>
+<body>
+    
+    <section class="wrapper">
+        <nav>
+        
+            <ul>
+                <li><a href="../index.html" target="_blank">Home</a></li>
+                <li><a href="./price.html" target="_blank">Prices</a></li>
+                <li><a href="./convert.html" target="_blank">Convert</a></li>
+                <li><a href="./contact.html" target="_blank">Contact Us</a></li>
+            </ul>
+            <a href="./signup.html" class="btn">Log in</a>
+    
+            
+        </nav>
+        
+        <h1>Cryptocurrency Converter</h1>
+        <span>This cryptocurrency converter is made with the <a href="https://cryptocompare.com/api">CryptoCompare API</a></span>
+    
+        <form>
+            <select name="currencyFrom" id="currencyFrom">
+                <option value="">-- From --</option>
+                <option value="BTC">BTC</option>
+                <option value="ETH">ETH</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+            </select>
+            <input type="number" name="amountFrom" id="amountFrom">
+            <select name="currencyTo" id="currencyTo">
+                <option value="">-- To --</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="BTC">BTC</option>
+                <option value="ETH">ETH</option>
+            </select>
+        </form>
+    
+        <p id="result">Select some currencies and an amount to convert</p>
+    </section>
+    <script src="../assets/javascript/convert.js"></script>
+</body>
+</html>
